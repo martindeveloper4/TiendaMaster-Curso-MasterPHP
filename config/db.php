@@ -1,0 +1,14 @@
+<?php 
+
+
+	class Database{
+		public static function connect(){
+			$db=new mysqli('localhost','root','root','tienda_master');
+			$db->query("SET_NAME 'utf8'");
+			return $db;
+		}
+
+	}
+
+
+ ?>
